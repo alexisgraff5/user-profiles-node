@@ -25,7 +25,8 @@ app.use(session({
 }));
 
 app.post('/api/login', userCtrl.login);
-app.get('/api/profiles', profileCtrl.getProfiles);
+app.get('/api/profiles', profileCtrl.getFriends);
+
 
 app.listen(config.port, function() {
   console.log('listening to port', config.port);
